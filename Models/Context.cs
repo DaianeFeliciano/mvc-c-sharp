@@ -11,6 +11,8 @@ namespace CursoMVC.Models
         public DbSet<Categoria> Categorias { get; set; } // ta falando que tenho uma tabela chamada categoria quando executar
                                                          // esse context vai criar e no momento que eu precisar acessar basta referenciar esse context
             // fala para entiy que vai ter uma tabela de categoria informar qual tipo da classe e precisa deixar no startup ele visivel
+       
+        public DbSet<Produto> Produtos { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)// tem metodo dentro dele q vai subscrever metodo responsavel por configurar o entity frameork
 
         {
